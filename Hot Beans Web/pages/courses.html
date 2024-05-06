@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Beans Web - Courses</title>
+  <style>
+    /* Recommendations Section */
+    .recommendations-section {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .recommendations-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    /* TODO align this box to the center of the page */
+    .course-box {
+      margin-left: 300px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+
+    .course-box img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .course-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .course-box p {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+
+    .recommendations-section a {
+      width: 138px;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2rem;
+      background-color: #d1d1d1;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .recommendations-section a:hover {
+      background-color: #b1b1b1;
+    }
+
+    .course-box-link {
+      margin-top: 50px;
+    }
+
+    /* Additional resources Section */
+    .section-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: top;
+      align-content: center;
+    }
+
+    .additional-resources-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .additional-resources-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      margin-left: 300px;
+    }
+
+    .additional-resources-box {
+      margin-left: 300px;
+      margin-bottom: 50px;
+    }
+
+    .additional-resources-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .additional-resources-box li a {
+      max-width: 132px;
+      margin: 10px 0;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2rem;
+      background-color: #d1d1d1;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .additional-resources-box li a:hover {
+      background-color: #b1b1b1;
+    }
+
+    .page-image-right-of-content {
+      width: 28%;
+      min-width: 300px;
+      margin: 0 30% 0 0;
+      padding: 10px;
+      border-radius: 5px;
+      float: right;
+    }
+
+    .page-image-right-of-content img {
+      margin-top: 300px;
+      max-width: 1000px;
+      max-height: 500px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="branding">
+      <a href="about-us.html"><img src="../images/general/hot-beans-web-logo.png" alt="Hot Beans Web Logo"></a>
+      <h1>Hot Beans Web</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="meet-the-team.html">Meet the Team</a></li>
+        <li><a href="job-specifications.html">Job Specifications</a></li>
+        <li><a href="courses.html"><strong>Courses</strong></a></li>
+        <li><a href="apply.html">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="banner-img">
+        <div class="banner-text">
+          <h2>Expand Your Skills with Top Web Development Courses</h2>
+        </div>
+      </div>
+    </div>
+    <div class="opening">
+      <h2>Courses</h2>
+      <p>At Hot Beans Web, we believe in continuous learning and skill development. Explore these recommended web
+        development courses to stay ahead of the curve and become a valuable asset in the industry.</p>
+    </div>
+    <hr>
+    <div class="recommendations-section">
+      <h2>Top courses we recomend</h2>
+      <div class="course-box">
+        <img src="../images/courses/frontend-masters.png" alt="HTML and CSS Course">
+        <div class="course-box-text">
+          <div class="course-box-title">
+            <h3>HTML and CSS</h3>
+          </div>
+          <div class="course-box-description">
+            <p>Master HTML, CSS, and JavaScript in this comprehensive 12-week bootcamp designed to transform you into a
+              skilled front-end web developer.</p>
+          </div>
+          <div class="course-box-link">
+            <a href="https://www.w3schools.com/html/" target="_blank">View Course</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-box">
+        <img src="../images/courses/codefinity.png" alt="JavaScript Course">
+        <div class="course-box-text">
+          <div class="course-box-title">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="course-box-description">
+            <p>Learn the principles of responsive web design and create websites that look great on any device. This
+              6-week
+              course will teach you essential techniques and best practices to ensure an optimal user experience.</p>
+          </div>
+          <div class="course-box-link">
+            <a href="https://www.w3schools.com/js/" target="_blank">View Course</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-box">
+        <img src="../images/courses/42fr.png" alt="React Course">
+        <div class="course-box-text">
+          <div class="course-box-title">
+            <h3>React</h3>
+          </div>
+          <div class="course-box-description">
+            <p>Become a full-stack web developer in this immersive 16-week course. You'll gain expertise in both
+              front-end
+              and
+              back-end technologies, working with popular programming languages, databases, and web frameworks.</p>
+          </div>
+          <div class="course-box-link">
+            <a href="https://www.w3schools.com/react/" target="_blank">View Course</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-box">
+        <img src="../images/courses/butter-academy.png" alt="Node Course">
+        <div class="course-box-text">
+          <div class="course-box-title">
+            <h3>Node</h3>
+          </div>
+          <div class="course-box-description">
+            <p>Unleash your creativity and develop a keen eye for design with this 8-week UX/UI Design course. Learn how
+              to
+              create visually stunning and user-friendly interfaces that keep users engaged and coming back for more.
+            </p>
+          </div>
+          <div class="course-box-link">
+            <a href="https://www.w3schools.com/nodejs/" target="_blank">View Course</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="section-wrapper">
+      <div class="additional-resources-section">
+        <h2>Additional Resources</h2>
+        <div class="additional-resources-box">
+          <h3>Articles</h3>
+          <ul style="display: block;">
+            <li><a href=" https://www.w3schools.com/html/html_intro.asp">HTML Introduction</a></li>
+            <li><a href="https://www.w3schools.com/css/css_intro.asp">CSS Introduction</a></li>
+            <li><a href="https://www.w3schools.com/js/js_intro.asp">JavaScript Introduction</a></li>
+            <li><a href="https://www.w3schools.com/react/react_intro.asp">React Introduction</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/nodejs_intro.asp">Node Introduction</a></li>
+          </ul>
+        </div>
+        <div class="additional-resources-box">
+          <h3>Blogs</h3>
+          <ul style="display: block;">
+            <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTML Introduction</a></li>
+            <li><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">CSS Introduction</a></li>
+            <li><a href="https://www.w3schools.com/js/js_intro.asp" target="_blank">JavaScript Introduction</a></li>
+            <li><a href="https://www.w3schools.com/react/react_intro.asp" target="_blank">React Introduction</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/nodejs_intro.asp" target="_blank">Node Introduction</a></li>
+          </ul>
+        </div>
+        <div class="additional-resources-box">
+          <h3>Forums</h3>
+          <ul style="display: block;">
+            <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTML Introduction</a></li>
+            <li><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">CSS Introduction</a></li>
+            <li><a href="https://www.w3schools.com/js/js_intro.asp" target="_blank">JavaScript Introduction</a></li>
+            <li><a href="https://www.w3schools.com/react/react_intro.asp" target="_blank">React Introduction</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/nodejs_intro.asp" target="_blank">Node Introduction</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-image-right-of-content">
+        <img src="../images/courses/learning.jpg" alt="Hot Beans Web Learning">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Hot Beans Web</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Beans Web - Apply</title>
+  <style>
+    /* Application Form */
+    .application-form {
+      width: 60%;
+      height: 100%;
+      max-width: 1200px;
+      margin: 15px auto;
+      padding: 20px;
+    }
+
+    .application-form fieldset {
+      border: transparent;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .application-form legend {
+      font-size: 20px;
+      font-weight: bold;
+      color: #5c5c5c;
+    }
+
+    .application-form label {
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: #5c5c5c;
+    }
+
+    .application-form input {
+      width: 60%;
+      height: 30px;
+      padding: 5px;
+      border: 1px solid #d1d1d1;
+      border-radius: 5px;
+    }
+
+    .application-form select {
+      width: 30%;
+      height: 30px;
+      padding: 5px;
+      border: 1px solid #d1d1d1;
+      border-radius: 5px;
+    }
+
+    .application-form input[type="text"],
+    .application-form input[type="email"],
+    .application-form input[type="tel"],
+    .application-form input[type="date"],
+    .application-form input[type="number"],
+    .application-form input[type="submit"] {
+      width: 60%;
+    }
+
+    .application-form input[type="submit"] {
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #5c5c5c;
+      background-color: #d1d1d1;
+      border: transparent;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .application-form input[type="submit"]:hover {
+      background-color: #5c5c5c;
+      color: #d1d1d1;
+    }
+
+    .application-form textarea {
+      width: 60%;
+      height: 100px;
+      padding: 5px;
+      border: 1px solid #d1d1d1;
+      border-radius: 5px;
+    }
+
+    .application-form .name,
+    .application-form .address-info,
+    .application-form .consent {
+      width: 60%;
+      display: flex;
+    }
+
+    .application-form .name-inline-block,
+    .application-form .address-info-inline-block {
+      flex: 1;
+    }
+
+    .application-form .name-inline-block:first-child,
+    .application-form .address-info-inline-block:first-child {
+      padding-right: 15px;
+    }
+
+    .application-form .name-inline-block:last-child {
+      padding: 40px 0 0 15px;
+    }
+
+    .application-form .name-inline-block input,
+    .application-form .address-info-inline-block input {
+      width: 100%;
+    }
+
+    .application-form .address-info-inline-block:last-child {
+      padding-left: 15px;
+    }
+
+    .application-form .consent-inline-block {
+      text-align: left;
+    }
+
+    .additional-information ul li {
+      display: block;
+    }
+
+    .additional-information ul li label {
+      display: inline-block;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="branding">
+      <a href="about-us.html"><img src="../images/general/hot-beans-web-logo.png" alt="Hot Beans Web Logo"></a>
+      <h1>Hot Beans Web</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="meet-the-team.html">Meet the Team</a></li>
+        <li><a href="job-specifications.html">Job Specifications</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="apply.html"><strong>Apply</strong></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="banner-img">
+        <div class="banner-text">
+          <h2>Apply Now to Join the Hot Beans Web Team</h2>
+        </div>
+      </div>
+    </div>
+    <div class="opening">
+      <h2>Apply</h2>
+      <p>Hot Beans Web is always looking for new talent to join our team. If you think you have what it takes to be a
+        part of our team, please fill out the form below and we will get back to you as soon as possible.</p>
+    </div>
+    <hr>
+    <div class="application-form">
+      <form id="applyForm" onsubmit="return saveData()">
+        <fieldset>
+          <legend>Personal Information:</legend>
+          <div class="name">
+            <div class="name-inline-block">
+              <label for="first-name">Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+            </div>
+            <div class="name-inline-block">
+              <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+          </div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number" required>
+          <label for="address-line-1">Address</label>
+          <input type="text" id="address-line-1" name="address-line-1" placeholder="Address Line 1" required>
+          <input type="text" id="address-line-2" name="address-line-2" placeholder="Address Line 2"
+            style="margin-top: 30px;">
+          <div class="address-info">
+            <div class="address-info-inline-block">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="City" required>
+            </div>
+            <div class="address-info-inline-block">
+              <label for="postcode">Postcode</label>
+              <input type="text" id="postcode" name="postcode" placeholder="Postcode" required>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Position Information:</legend>
+          <label for="job-title">Job Title</label>
+          <input type="text" id="job-title" name="job-title" placeholder="Job Title" required>
+          <label for="how-did-you-hear">How did you hear of this position?</label>
+          <select id="how-did-you-hear" name="how-did-you-hear" required>
+            <option value="friend">Friend</option>
+            <option value="family">Family</option>
+            <option value="social-media">Social Media</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Educational Background:</legend>
+          <label for="highest-level-of-education">Highest level of education completed</label>
+          <select id="highest-level-of-education" name="highest-level-of-education" required style="max-width: 50px;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+          <label for="school-name">School Name</label>
+          <input type="text" id="school-name" name="school-name" placeholder="School Name" required>
+          <label for="field-of-study">Field of Study</label>
+          <input type="text" id="field-of-study" name="field-of-study" placeholder="Field of Study" required>
+          <label for="graduation-date">Graduation Date</label>
+          <input type="date" id="graduation-date" name="graduation-date" required>
+        </fieldset>
+        <fieldset>
+          <legend>Work Experience:</legend>
+          <label for="company-name">Company Name</label>
+          <input type="text" id="company-name" name="company-name" placeholder="Company Name" required>
+          <label for="job-title">Job Title</label>
+          <input type="text" id="job-title" name="job-title" placeholder="Job Title" required>
+          <label for="start-date">Start Date</label>
+          <input type="date" id="start-date" name="start-date" required>
+          <label for="termination-date">Termination Date</label>
+          <input type="date" id="termination-date" name="termination-date" required>
+        </fieldset>
+        <fieldset>
+          <legend>Skills and Certifications:</legend>
+          <label for="skills">List your relevant skills</label>
+          <textarea id="skills" name="skills" placeholder="List your relevant skills" required></textarea>
+          <label for="certifications">List any certifications you hold</label>
+          <textarea id="certifications" name="certifications" placeholder="List any certifications you hold"
+            required></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Portfolio and Resume:</legend>
+          <label for="portfolio-url">Portfolio URL</label>
+          <input type="url" id="portfolio-url" name="portfolio-url" placeholder="Portfolio URL" required>
+          <label for="resume">Upload Resume</label>
+          <input type="file" id="resume" name="resume" required style="max-width: 20%; border: transparent;">
+        </fieldset>
+        <fieldset>
+          <legend>Additional Information:</legend>
+          <label for="additional-information">Briefly describe why you are a good fit for this position</label>
+          <textarea id="additional-information" name="additional-information"
+            placeholder="Briefly describe why you are a good fit for this position" required></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Submission:</legend>
+          <div class="consent">
+            <div class="consent-inline-block">
+              <input type="checkbox" id="consent" name="consent" required style="width: 20px; height: 20px;">
+            </div>
+            <div class="consent-inline-block">
+              <label for="consent" style="font-size: 12px; margin: 3px 0 0 3px;">I consent to Hot Beans Web collecting
+                my data</label>
+            </div>
+          </div>
+          <button type="submit" style="max-width: 100px; margin-top: 10px;">Submit</button>
+        </fieldset>
+      </form>
+      <div class="additional-information">
+        <h2>Tips for your application</h2>
+        <ul style="display: block;">
+          <li style="text-align: left; padding: 3px; font-size: 18px;">•Tailor your resume to the specific job
+            requirements</li>
+          <li style="text-align: left; padding: 3px; font-size: 18px;">•Include a link to your portfolio showcasing your
+            best work</li>
+          <li style="text-align: left; padding: 3px; font-size: 18px;">•Double-check your application for any errors
+            before submitting</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Hot Beans Web</p>
+  </footer>
+  <script>
+    // A script to make the form save to local storage
+    const form = document.querySelector('form');
+    const inputs = document.querySelectorAll('input, select, textarea');
+    const consent = document.querySelector('#consent');
+    const consentLabel = document.querySelector('#consent + label');
+    const submitButton = document.querySelector('button[type="submit"]');
+    const formObject = {};
+    const consentObject = {};
+    const consentLabelObject = {};
+    const submitButtonObject = {};
+    const formObjectString = JSON.stringify(formObject);
+    const consentObjectString = JSON.stringify(consentObject);
+    const consentLabelObjectString = JSON.stringify(consentLabelObject);
+    const submitButtonObjectString = JSON.stringify(submitButtonObject);
+    const formObjectParsed = JSON.parse(formObjectString);
+    const consentObjectParsed = JSON.parse(consentObjectString);
+    const consentLabelObjectParsed = JSON.parse(consentLabelObjectString);
+    const submitButtonObjectParsed = JSON.parse(submitButtonObjectString);
+    const formObjectKeys = Object.keys(formObjectParsed);
+    const consentObjectKeys = Object.keys(consentObjectParsed);
+    const consentLabelObjectKeys = Object.keys(consentLabelObjectParsed);
+    const submitButtonObjectKeys = Object.keys(submitButtonObjectParsed);
+    const formObjectValues = Object.values(formObjectParsed);
+    const consentObjectValues = Object.values(consentObjectParsed);
+    const consentLabelObjectValues = Object.values(consentLabelObjectParsed);
+    const submitButtonObjectValues = Object.values(submitButtonObjectParsed);
+    const formObjectEntries = Object.entries(formObjectParsed);
+    const consentObjectEntries = Object.entries(consentObjectParsed);
+
+    // save the form data to local storage
+    function saveToLocalStorage() {
+      for (let i = 0; i < inputs.length; i++) {
+        formObject[inputs[i].name] = inputs[i].value;
+        localStorage.setItem('formObject', JSON.stringify(formObject));
+      }
+      for (let i = 0; i < consentObjectKeys.length; i++) {
+        consentObject[consentObjectKeys[i]] = consent.checked;
+        localStorage.setItem('consentObject', JSON.stringify(consentObject));
+      }
+      for (let i = 0; i < consentLabelObjectKeys.length; i++) {
+        consentLabelObject[consentLabelObjectKeys[i]] = consentLabel.style.color;
+        localStorage.setItem('consentLabelObject', JSON.stringify(consentLabelObject));
+      }
+      for (let i = 0; i < submitButtonObjectKeys.length; i++) {
+        submitButtonObject[submitButtonObjectKeys[i]] = submitButton.disabled;
+        localStorage.setItem('submitButtonObject', JSON.stringify(submitButtonObject));
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Beans Web - Meet the Team</title>
+  <style>
+    /* Founding Members Section */
+    .founding-members {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .founding-member {
+      width: 20%;
+      padding: 10px;
+      background-color: #d1d1d1;
+      margin: 100px;
+      text-align: left;
+      min-width: 200px;
+    }
+
+    .founding-member img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+
+    /* Web Developers Section */
+    .web-developer-carousel {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .web-developer-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .web-developer-slide {
+      position: relative;
+      display: inline-block;
+      width: calc(20% - 16px);
+      margin: 8px;
+      vertical-align: top;
+    }
+
+    .web-developer-slide img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Developer Info */
+    .developer-info {
+      width: 30%;
+      height: 300px;
+      position: block;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 1.4;
+      text-align: center;
+      display: none;
+      margin: 0 auto;
+    }
+
+    .developer-info h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .developer-info p {
+      margin: 0;
+    }
+
+    .developer-info.active {
+      display: block;
+    }
+
+    .web-developer-slide.active .developer-info {
+      transform: translateY(0);
+    }
+
+    .web-developer-slide:hover .developer-info {
+      transform: translateY(0);
+    }
+
+    /* Carousel Controls */
+    .carousel-control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 1.5rem;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .carousel-control.prev {
+      left: 0;
+    }
+
+    .carousel-control.next {
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="branding">
+      <a href="about-us.html"><img src="../images/general/hot-beans-web-logo.png" alt="Hot Beans Web Logo"></a>
+      <h1>Hot Beans Web</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="meet-the-team.html"><strong>Meet the Team</strong></a></li>
+        <li><a href="job-specifications.html">Job Specifications</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="apply.html">Apply</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <div class="banner">
+      <div class="banner-img">
+        <div class="banner-text">
+          <h2>Meet Our Talented Web Developers</h2>
+        </div>
+      </div>
+      <div style="width: 100%; height: 40px; background-color: #d1d1d1;"></div>
+    </div>
+    <div class="opening">
+      <h2>Meet the Team</h2>
+      <p>At Hot Beans Web, we believe in nurturing the next generation of web development professionals. Please get to
+        know our trainee web developers and learn about their journey at our company.</p>
+    </div>
+    <hr>
+    <div class="founding-members">
+      <div class="founding-member">
+        <img src="../images/meet-the-team/Dwight-profilepicture.png" alt="Dwight profile picture">
+        <h3>Dwight</h3>
+        <h4>Founder</h4>
+        <p>Alex is the founder of Hot Beans Web. He has been a web developer for 10 years and has worked on many
+          different projects. He is passionate about web development and loves to share his knowledge with others.</p>
+      </div>
+      <div class="founding-member">
+        <img src="../images/meet-the-team/Michael-profilepicture.PNG" alt="Michael profile picture">
+        <h3>Michael</h3>
+        <h4>Founder</h4>
+        <p>Emma is the co-founder of Hot Beans Web. She has been a web developer for 10 years and has worked on many
+          different projects. She is passionate about web development and loves to share her knowledge with others.</p>
+      </div>
+      <div class="founding-member">
+        <img src="../images/meet-the-team/Pam-profilepicture.png" alt="Pam profile picture">
+        <h3>Pam</h3>
+        <h4>Founder</h4>
+        <p>Oliver is the co-founder of Hot Beans Web. He has been a web developer for 10 years and has worked on many
+          different projects. He is passionate about web development and loves to share his knowledge with others.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="web-developers">
+      <h2 style="text-align: center; font-size: 28px; margin: 40px;">Our Web Developers</h2>
+      <div class="web-developer-carousel">
+        <div class="web-developer-wrapper">
+          <div class="web-developer-slide" data-index="0">
+            <img src="../images/meet-the-team/alex-profilepicture.png" alt="Developer 1">
+          </div>
+          <div class="web-developer-slide" data-index="1">
+            <img src="../images/meet-the-team/john-profilepicture.png" alt="Developer 2">
+          </div>
+          <div class="web-developer-slide" data-index="2">
+            <img src="../images/meet-the-team/phyllis-profilepicture.png" alt="Developer 3">
+          </div>
+          <div class="web-developer-slide" data-index="3">
+            <img src="../images/meet-the-team/rachel-profilepicture.png" alt="Developer 4">
+          </div>
+          <div class="web-developer-slide" data-index="4">
+            <img src="../images/meet-the-team/sam-profilepicture.png" alt="Developer 5">
+          </div>
+        </div>
+        <div class="carousel-control prev" data-action="prev">←</div>
+        <div class="carousel-control next" data-action="next">→</div>
+      </div>
+      <div class="info">
+        <div class="developer-info">
+          <h2>Alex</h2>
+          <h3>Mobile Developer</h3>
+          <p>Hi, I'm Alex, a web developer at Hot Beans Web.I'm passionate about creating responsive
+            and user-friendly web experiences using HTML/CSS, JavaScript, and React. I'm also experienced with
+            Node.js and
+            server-side development.At Hot Beans Web, I've worked on a variety of projects, from e-commerce sites to
+            web
+            applications for startups.</p>
+        </div>
+
+        <div class="developer-info">
+          <h2>John</h2>
+          <h3>Full-Stack Developer</h3>
+          <p>Hi, I'm Phyllis, a web developer and UX/UI designer at Hot Beans Web. I specialize in
+            creating beautiful and user-friendly websites using Adobe Creative Suite and WordPress. I'm also
+            experienced in
+            responsive design and optimizing websites for search engines. At Hot Beans Web, I've worked on projects
+            for a
+            range of clients, from small businesses to large corporations.</p>
+        </div>
+
+        <div class="developer-info">
+          <h2>Phyllis</h2>
+          <h3>Back-End Developer</h3>
+          <p>Hi, I'm John, a web developer at Hot Beans Web. I'm skilled in PHP and MySQL and have
+            experience working with the Laravel framework and Vue.js. I enjoy creating dynamic and interactive web
+            applications that solve real-world problems. At Hot Beans Web, I've worked on projects for clients in a
+            variety
+            of industries, from healthcare to finance.</p>
+        </div>
+
+        <div class="developer-info">
+          <h2>Rachel</h2>
+          <h3>UI/UX Designer</h3>
+          <p>Hi, I'm Rachel, a web developer with a background in graphic design. I'm skilled in
+            HTML/CSS, JavaScript, jQuery, and Bootstrap and have experience working on projects for a range of
+            clients. At
+            Hot Beans Web, I've worked on websites for small businesses, startups, and non-profit organizations.</p>
+        </div>
+
+        <div class="developer-info">
+          <h2>Sam</h2>
+          <h3>Front-End Developer</h3>
+          <p>Hi, I'm Sam, a web developer at Hot Beans Web. I'm skilled in Python and have experience
+            working with web frasmeworks such as Django and Flask. I'm also experienced in cloud computing and have
+            worked
+            with AWS. At Hot Beans Web, I've worked on a variety of projects, from building custom web applications
+            to
+            integrating third-party APIs</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <p>&copy; 2023 Hot Beans Web</p>
+  </footer>
+  <script src="web-developer-carousel.js"></script>
+</body>
+
+</html>
